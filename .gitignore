@@ -16,3 +16,5 @@ yarn-error.log
 /public/css
 /public/fonts
 /resources/wechat_pay
+.DS_Store
+*/.DS_Store
