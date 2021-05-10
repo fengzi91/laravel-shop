@@ -61,14 +61,14 @@ class ProjectIndex
                     'ik_smart_synonym' => [
                         'type'      => 'custom',
                         'tokenizer' => 'ik_smart',
-                        // 'filter'    => ['synonym_filter'],
+                         'filter'    => ['synonym_filter'],
                     ],
                 ],
                 'filter'   => [
-//                    'synonym_filter' => [
-//                        'type'          => 'synonym',
-//                        'synonyms_path' => 'analysis/synonyms.txt',
-//                    ],
+                    'synonym_filter' => [
+                        'type'          => 'synonym',
+                        'synonyms_path' => 'analysis/synonyms.txt',
+                    ],
                 ],
             ],
         ];

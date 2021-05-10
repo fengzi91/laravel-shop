@@ -63,15 +63,7 @@ services:
           - sail
         volumes:
           - 'sailelasticsearch:/usr/share/elasticsearch/data'
-    elastichd:
-      image: containerize/elastichd:latest
-      container_name: elasticsearch-hd
-      networks:
-        - sail
-      ports:
-        - "9800:9800"
-      depends_on:
-        - "elasticsearch"
+          - './resources/elasticsearch:/usr/share/elasticsearch/config/analysis'
 
 networks:
     sail:

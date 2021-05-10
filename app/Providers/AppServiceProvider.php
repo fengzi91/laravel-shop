@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Str;
+use Inertia\Inertia;
 use Monolog\Logger;
 use Yansongda\Pay\Pay;
 use Illuminate\Support\ServiceProvider;
